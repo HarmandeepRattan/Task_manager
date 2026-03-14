@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function App() {
   return (
-    <div>Task Manager App</div>
+    <div className='text-red-500 text-3xl underline'>Task Manager App</div>
   )
 }
