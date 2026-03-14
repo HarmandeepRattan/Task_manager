@@ -1,9 +1,11 @@
 const express = require('express')
 const app = express()
 const dotenv = require('dotenv')
+const connectdb = require('./config/db')
 
-dotenv.config()
 
+dotenv.config();
+connectdb();
 // Middleware to handle cors
 const cors = require('cors')
 app.use(cors({
