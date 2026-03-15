@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const dotenv = require('dotenv')
 const connectdb = require('./config/db')
-
+const userRouter = require('./routes/userRoute')
 
 dotenv.config();
 connectdb();
@@ -17,7 +17,9 @@ app.use(cors({
 // Middleware to handle JSON object in req body
 app.use(express.json())
 
-app.listen(8080,()=>{
+app.listen(8000,()=>{
     console.log("server is running");
     
 })
+
+app.use("/api",userRouter)
