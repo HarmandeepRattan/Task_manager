@@ -15,8 +15,8 @@ export default function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login/>}/>
-        <Route path='/sign-up' element={<SignUp/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/' element={<SignUp/>}/>
 
         {/* ADMIN */}
         <Route element={<PrivateRoute allowedRoles={["admin"]}/>}>
