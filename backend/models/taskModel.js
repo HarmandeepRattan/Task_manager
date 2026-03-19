@@ -1,4 +1,4 @@
-const {Schema,model, mongo, default: mongoose}= require('mongoose')
+const {Schema,model}= require('mongoose')
 const taskSchema = new mongoose.Schema({
     title:{
         type:String,
